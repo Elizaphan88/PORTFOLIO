@@ -1,0 +1,115 @@
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      header {
+        background: radial-gradient(circle, #e8491d, #35424a);
+        color: white;
+        padding: 110px 0;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+      header p {
+        font-size: 1.5rem;
+      }
+      nav {
+        position: -webkit-sticky; /* For Safari */
+        position: sticky;
+        top: 0;
+        background-color: #343a40;
+        padding: 10px 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+      }
+      nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      nav a:hover {
+        background-color: #e8491d;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .container {
+        margin: 30px auto;
+      }
+      #about,
+      #geospatial-projects,
+      #webdev-projects,
+      #contact {
+        padding: 20px;
+        background: white;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      #about h2,
+      #geospatial-projects h2,
+      #webdev-projects h2,
+      #contact h2 {
+        color: #e8491d;
+      }
+      .fixed-social-icons {
+        position: fixed;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+      }
+      .fixed-social-icons a {
+        margin: 5px 0;
+        font-size: 1.5rem;
+        transition: color 0.3s;
+      }
+      .fixed-social-icons a.linkedin {
+        color: #0e76a8;
+      }
+      .fixed-social-icons a.github {
+        color: #333;
+      }
+      .fixed-social-icons a.twitter {
+        color: #1da1f2;
+      }
+      .fixed-social-icons a.whatsapp {
+        color: #25d366;
+      }
+      .fixed-social-icons a.phone {
+        color: #4caf50;
+      }
+      .fixed-social-icons a.gmail {
+        color: #ea4335;
+      }
+      .fixed-social-icons a:hover {
+        color: #e8491d !important;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #35424a;
+        color: white;
+      }
+      a {
+        color: #e8491d;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      a:hover {
+        color: #333;
+      }
+      .contact-icons {
+        margin-top: 20px;
+      }
+      .contact-icons a {
+        margin: 0 10px;
+        font-size: 1.5rem;
+        transition: color 0.3s;
+      }
