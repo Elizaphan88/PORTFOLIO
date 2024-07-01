@@ -14,9 +14,153 @@
     />
     <link
       rel="icon"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff2"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/svgs/solid/code.svg"
+      type="image/svg+xml"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+      }
+      header {
+        background: radial-gradient(circle, #35424a, #e8491d);
+        color: white;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+        position: relative;
+      }
+      header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+      header p {
+        font-size: 1.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid white; /* Adjust thickness of cursor */
+        animation: typing 16s steps(30, end);
+        animation-delay: 1s; /* Delay before typing animation starts */
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        z-index: 1000;
+        backdrop-filter: blur(10px);
+        transition: background-color 0.3s ease;
+      }
+      .navbar.scrolled {
+        background-color: rgba(52, 58, 64, 0.9);
+      }
+      .navbar a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .navbar a:hover {
+        background-color: #e8491d;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .container {
+        margin: 30px auto;
+        padding: 0 20px;
+      }
+      #about,
+      #geospatial-projects,
+      #webdev-projects,
+      #contact {
+        padding: 20px;
+        background: white;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      #about h2,
+      #geospatial-projects h2,
+      #webdev-projects h2,
+      #contact h2 {
+        color: #e8491d;
+      }
+      .fixed-social-icons {
+        position: fixed;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+      }
+      .fixed-social-icons a {
+        margin: 5px 0;
+        font-size: 1.5rem;
+        transition: color 0.3s;
+      }
+      .fixed-social-icons a.linkedin {
+        color: #0e76a8;
+      }
+      .fixed-social-icons a.github {
+        color: #333;
+      }
+      .fixed-social-icons a.twitter {
+        color: #1da1f2;
+      }
+      .fixed-social-icons a.whatsapp {
+        color: #25d366;
+      }
+      .fixed-social-icons a.phone {
+        color: #4caf50;
+      }
+      .fixed-social-icons a.gmail {
+        color: #ea4335;
+      }
+      .fixed-social-icons a:hover {
+        color: #e8491d !important;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #35424a;
+        color: white;
+      }
+      a {
+        color: #e8491d;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      a:hover {
+        color: #333;
+      }
+      .contact-icons {
+        margin-top: 20px;
+      }
+      .contact-icons a {
+        margin: 0 10px;
+        font-size: 1.5rem;
+        transition: color 0.3s;
+      }
+    </style>
   </head>
   <body>
     <div class="navbar" id="navbar">
@@ -31,15 +175,18 @@
     </header>
     <div class="fixed-social-icons">
       <a
-        href="https://www.linkedin.com/in/elizaphan-maina-2b0613230/"
+        href="https://www.linkedin.com/in/elizaphan-maina"
         class="linkedin"
         target="_blank"
         ><i class="fab fa-linkedin"></i
       ></a>
-      <a href="https://github.com/Elizaphan88" class="github" target="_blank"
+      <a href="https://github.com/elizaphan" class="github" target="_blank"
         ><i class="fab fa-github"></i
       ></a>
-      <a href="https://twitter.com/eli_zaphan" class="twitter" target="_blank"
+      <a
+        href="https://twitter.com/elizaphan_maina"
+        class="twitter"
+        target="_blank"
         ><i class="fab fa-twitter"></i
       ></a>
       <a href="https://wa.me/254714575082" class="whatsapp" target="_blank"
@@ -48,11 +195,10 @@
       <a href="tel:+254714575082" class="phone"
         ><i class="fas fa-phone-alt"></i
       ></a>
-      <a href="mailto:elizaphanchege88@gmail.com" class="gmail" target="_blank"
+      <a href="mailto:elizaphan@example.com" class="gmail" target="_blank"
         ><i class="fas fa-envelope"></i
       ></a>
     </div>
-
     <div class="container">
       <section id="about">
         <h2><i class="fas fa-user"></i> About Me</h2>
@@ -101,24 +247,22 @@
       <section id="contact">
         <h2><i class="fas fa-envelope"></i> Contact</h2>
         <p>
-          If you'd like to get in touch, please feel free to reach out via the
-          following platforms
+          If you'd like to get in touch, please feel free to reach out via email
+          at <a href="mailto:elizaphan@example.com">elizaphan@example.com</a> or
+          connect with me on LinkedIn.
         </p>
         <div class="contact-icons">
           <a
-            href="https://www.linkedin.com/in/elizaphan-maina-2b0613230/"
+            href="https://www.linkedin.com/in/elizaphan-maina"
             class="linkedin"
             target="_blank"
             ><i class="fab fa-linkedin"></i
           ></a>
-          <a
-            href="https://github.com/Elizaphan88"
-            class="github"
-            target="_blank"
+          <a href="https://github.com/elizaphan" class="github" target="_blank"
             ><i class="fab fa-github"></i
           ></a>
           <a
-            href="https://twitter.com/eli_zaphan"
+            href="https://twitter.com/elizaphan_maina"
             class="twitter"
             target="_blank"
             ><i class="fab fa-twitter"></i
@@ -142,6 +286,5 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
   </body>
 </html>

@@ -4,10 +4,16 @@
         color: #333;
       }
       header {
-        background: radial-gradient(circle, #e8491d, #35424a);
+        background: radial-gradient(circle, #35424a, #e8491d);
         color: white;
-        padding: 110px 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+        padding: 0 20px;
+        position: relative;
       }
       header h1 {
         font-size: 3rem;
@@ -16,29 +22,34 @@
       header p {
         font-size: 1.5rem;
       }
-      nav {
-        position: -webkit-sticky; /* For Safari */
-        position: sticky;
+      .navbar {
+        position: fixed;
         top: 0;
-        background-color: #343a40;
-        padding: 10px 0;
-        z-index: 1000;
+        width: 100%;
         display: flex;
         justify-content: center;
+        padding: 10px 0;
+        z-index: 1000;
+        backdrop-filter: blur(10px);
+        transition: background-color 0.3s ease;
       }
-      nav a {
+      .navbar.scrolled {
+        background-color: #e8491d;
+      }
+      .navbar a {
         color: white;
         margin: 0 15px;
         text-decoration: none;
         transition: background-color 0.3s, color 0.3s;
       }
-      nav a:hover {
+      .navbar a:hover {
         background-color: #e8491d;
         padding: 5px 10px;
         border-radius: 5px;
       }
       .container {
         margin: 30px auto;
+        padding: 0 20px;
       }
       #about,
       #geospatial-projects,
@@ -94,7 +105,7 @@
       footer {
         text-align: center;
         padding: 20px;
-        background: #35424a;
+        background: #e8491d;
         color: white;
       }
       a {
