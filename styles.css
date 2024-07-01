@@ -4,7 +4,8 @@
         color: #333;
       }
       header {
-        background: radial-gradient(circle, #35424a, #e8491d);
+        /* background: radial-gradient(circle, #35424a, #e8491d); */
+        background-color: #082032;
         color: white;
         height: 100vh;
         display: flex;
@@ -15,12 +16,15 @@
         padding: 0 20px;
         position: relative;
       }
-      header h1 {
+      header h3 {
         font-size: 3rem;
         margin-bottom: 10px;
       }
       header p {
         font-size: 1.5rem;
+      }
+      header p span {
+        color: #ff4c29;
       }
       .navbar {
         position: fixed;
@@ -34,7 +38,7 @@
         transition: background-color 0.3s ease;
       }
       .navbar.scrolled {
-        background-color: #e8491d;
+        background-color: #082032;
       }
       .navbar a {
         color: white;
@@ -43,7 +47,7 @@
         transition: background-color 0.3s, color 0.3s;
       }
       .navbar a:hover {
-        background-color: #e8491d;
+        background-color: #ff4c29;
         padding: 5px 10px;
         border-radius: 5px;
       }
@@ -57,7 +61,7 @@
       #contact {
         padding: 20px;
         background: white;
-        margin: 20px 0;
+        margin: 20px ;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
@@ -65,7 +69,7 @@
       #geospatial-projects h2,
       #webdev-projects h2,
       #contact h2 {
-        color: #e8491d;
+        color: #082032;
       }
       .fixed-social-icons {
         position: fixed;
@@ -105,11 +109,11 @@
       footer {
         text-align: center;
         padding: 20px;
-        background: #e8491d;
+        background: #082032;
         color: white;
       }
       a {
-        color: #e8491d;
+        color: #082032;
         text-decoration: none;
         transition: color 0.3s;
       }

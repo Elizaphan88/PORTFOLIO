@@ -6,3 +6,14 @@ window.onscroll = function () {
       navbar.classList.remove("scrolled");
     }
   };
+
+  var typed = new Typed(".auto-type", {
+    strings: [
+      "Geospatial Engineer",
+      "Web developer",
+      "GIS developer",
+    ],
+    typeSpeed: 150,
+    backSpeed: 50,
+    loop : true,
+  });

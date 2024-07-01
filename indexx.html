@@ -42,21 +42,9 @@
       }
       header p {
         font-size: 1.5rem;
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: 3px solid white; /* Adjust thickness of cursor */
-        animation: typing 16s steps(30, end);
-        animation-delay: 1s; /* Delay before typing animation starts */
-        margin-top: 20px;
-        margin-bottom: 0;
       }
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: 100%;
-        }
+      header p span {
+        color: #fff724;
       }
       .navbar {
         position: fixed;
@@ -171,7 +159,7 @@
     </div>
     <header>
       <h1>Elizaphan Maina</h1>
-      <p>Geospatial Engineer & Web Developer</p>
+      <p>I'm a <span class="auto-type"></span></p>
     </header>
     <div class="fixed-social-icons">
       <a
@@ -273,18 +261,22 @@
           <a href="tel:+254714575082" class="phone"
             ><i class="fas fa-phone-alt"></i
           ></a>
-          <a href="mailto:elizaphan@example.com" class="gmail" target="_blank"
-            ><i class="fas fa-envelope"></i
-          ></a>
         </div>
       </section>
     </div>
+
     <footer>
       <p>&copy; 2024 Elizaphan Maina. All rights reserved.</p>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Geospatial Engineer", "Web developer", "GIS developer"],
+        typeSpeed: 150,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
