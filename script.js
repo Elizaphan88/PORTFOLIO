@@ -9,9 +9,10 @@ window.onscroll = function () {
 
   var typed = new Typed(".auto-type", {
     strings: [
-      "Geospatial Engineer",
-      "Web developer",
+      "Geospatial data scientist",
       "GIS developer",
+      "Web developer",
+      "Lifelong learner",
     ],
     typeSpeed: 150,
     backSpeed: 50,

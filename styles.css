@@ -19,7 +19,6 @@
       header h3 {
         font-size: 3rem;
         margin-bottom: 10px;
-        color: #ff4c29;
       }
       header p {
         font-size: 1.5rem;
@@ -54,8 +53,16 @@
       }
       .container {
         margin: 30px auto;
-        padding: 0 20px;
+        padding: 0 20px;        
       }
+      .container section {
+        justify-content: center;
+        text-align: center;
+      }
+      .container section ul {
+        list-style-type: none; /* Removes bullets from the list */
+        padding-left: 0; /* Removes left padding */
+    }
       #about,
       #geospatial-projects,
       #webdev-projects,
